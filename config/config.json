@@ -1,0 +1,16 @@
+{
+    "coreThing": {
+        "caPath": "[ROOT_CA_PEM_HERE]",
+        "certPath": "[CLOUD_PEM_CRT_HERE]",
+        "keyPath": "[CLOUD_PEM_KEY_HERE]",
+        "thingArn": "[THING_ARN_HERE]",
+        "iotHost": "[HOST_PREFIX_HERE].iot.[AWS_REGION_HERE].amazonaws.com",
+        "ggHost": "greengrass.iot.[AWS_REGION_HERE].amazonaws.com"
+    },
+    "runtime": {
+        "cgroup": {
+            "useSystemd": "no"
+        }
+    },
+    "managedRespawn": false
+}

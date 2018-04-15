@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  greengrass:
+    container_name: greengrass
+    image: gg-docker
+    hostname: greengrass
+    volumes:
+      - ./certs:/greengrass/certs
+      - ./config:/greengrass/config
+    ports:
+      - "8883"
+    environment:
+      - QPKG=x86_64
+    network_mode: "host"
+    privileged: true
+
