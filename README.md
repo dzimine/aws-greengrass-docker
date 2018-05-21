@@ -42,6 +42,6 @@ You _can_ build the image on MacOS and Windows, but _can not_ run it.
 The `devicemapper` trick doesn't work for MacOS or Windows, as Docker doesn't support the `devicemapper` storage driver there. 
 Instead, use the Vagrant Ubuntu VM: docker is installed and configured to use `devicemapper`. 
 
-Create the VM with `vagrant run`, log inside with `vagrant ssh`,
+Create the VM with `vagrant up`, log inside with `vagrant ssh`,
 and proceed with the steps before. Either pull the image from Docker Hub, or just rebuild it inside Vagrant VM.
 
