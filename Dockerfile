@@ -8,6 +8,8 @@ RUN apt-get update \
 
 ADD downloads/greengrass-ubuntu-x86-64-1.5.0.tar.gz /
 
+RUN apt-get install -y ca-certificates
+
 EXPOSE 8883
 
 COPY start.sh /
