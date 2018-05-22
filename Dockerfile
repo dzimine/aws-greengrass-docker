@@ -6,7 +6,9 @@ RUN adduser --system ggc_user \
 RUN apt-get update \
     && apt-get install -y sqlite3 python2.7 binutils
 
-ADD downloads/greengrass-ubuntu-x86-64-1.3.0.tar.gz /
+ADD downloads/greengrass-ubuntu-x86-64-1.5.0.tar.gz /
+
+RUN apt-get install -y ca-certificates
 
 EXPOSE 8883
 
