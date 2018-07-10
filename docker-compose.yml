@@ -3,7 +3,7 @@ version: '2'
 services:
   greengrass:
     container_name: greengrass
-    image: gg-docker
+    image: aws-greengrass
     hostname: greengrass
     volumes:
       - ./certs:/greengrass/certs
